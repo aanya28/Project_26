@@ -9,7 +9,7 @@ class Bob {
     this.body = Bodies.circle(x,y, 100, options);
     this.x = x;
     this.y = y;
-    this.r = radius;
+    this.r = radius/2;
     
     World.add(world, this.body);
 }
@@ -20,7 +20,7 @@ display(){
     translate(pos.x,pos.y)
     ellipseMode(RADIUS)
     ellipseMode(CENTER)    
-    ellipse(this.x,this.y,this.r);
+    ellipse(0,0,this.r,this.r);
     fill("purple");
     pop();
 }
